@@ -1,0 +1,35 @@
+@layer red, blue;
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem;
+}
+
+@layer blue {
+  @layer red {
+    .square {
+      background-color: red;
+    }
+  }
+}
+
+@layer red {
+  .square {
+    background-color: red;
+  }
+}
+
+@layer blue {
+  @layer red {
+    .square {
+      background-color: purple;
+    }
+  }
+}
+
+@layer blue.red {
+  .square {
+    background-color: purple;
+  }
+}

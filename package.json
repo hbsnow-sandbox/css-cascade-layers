@@ -1,0 +1,27 @@
+{
+  "name": "css-cascade-layers",
+  "version": "1.0.0",
+  "description": "Cascade Layers Example",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server 'public' --files='**/*.html, **/*.css'",
+    "build:css": "postcss ./public/example/08/style.css -o ./dist/combined.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbsnow-sandbox/css-cascade-layers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbsnow-sandbox/css-cascade-layers/issues"
+  },
+  "homepage": "https://github.com/hbsnow-sandbox/css-cascade-layers#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0"
+  }
+}

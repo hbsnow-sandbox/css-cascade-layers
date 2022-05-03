@@ -1,0 +1,14 @@
+@layer red, blue;
+@import url("./imported.css") layer(blue);
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem;
+}
+
+@layer red {
+  .square {
+    background-color: red;
+  }
+}

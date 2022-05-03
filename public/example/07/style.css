@@ -1,0 +1,21 @@
+.square {
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem;
+}
+
+@layer red {
+  .square {
+    background-color: red;
+  }
+}
+
+@layer blue {
+  .square {
+    background-color: blue;
+  }
+
+  .reset {
+    background-color: revert-layer;
+  }
+}
